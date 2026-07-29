@@ -23,6 +23,9 @@ public class ClienteRepository {
     public Cliente save(Cliente cliente) {
         return cliente;
     }
+
+    public Iterable<Cliente> findAll() {
+    }
 }
 
 

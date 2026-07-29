@@ -19,11 +19,20 @@ public class ClienteController {
         this.repository = repository;
     }
 
+    //CREATE
     @PostMapping
     public Cliente salvar(@RequestBody Cliente cliente) {
         return repository.save(cliente);
 
     }
+
+    //READ (Listar todos)
+    @GetMapping
+    public Iterable<Cliente> listar(){
+        return repository.findAll();
+    }
+
+
 
 
 }
