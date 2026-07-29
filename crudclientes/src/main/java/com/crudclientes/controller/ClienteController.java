@@ -31,6 +31,11 @@ public class ClienteController {
     public Iterable<Cliente> listar(){
         return repository.findAll();
     }
+     // READ (Buscar por id)
+    @GetMapping("/{id}")
+    public Cliente buscarPorId(@PathVariable Integer id) {
+        return (Cliente) repository.findById(id).orElse(null);
+    }
 
 
 
