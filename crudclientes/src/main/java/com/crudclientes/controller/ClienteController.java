@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 
-@Repository
+
 @Controller
 @RequestMapping({"/clientes"})
 public class ClienteController {
@@ -18,7 +18,14 @@ public class ClienteController {
     public ClienteController(ClienteRepository repository) {
         this.repository = repository;
     }
-    
+
+    @PostMapping
+    public Cliente salvar(@RequestBody Cliente cliente) {
+        return repository.save(cliente);
+
+    }
+
+
 }
 
 
