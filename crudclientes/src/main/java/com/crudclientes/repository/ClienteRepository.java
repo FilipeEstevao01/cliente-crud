@@ -1,5 +1,6 @@
 package com.crudclientes.repository;
 
+import com.crudclientes.model.Cliente;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,9 +17,12 @@ public class ClienteRepository {
 
     private String nome;
     private String email;
-    private Integer telefone;
+    private String telefone;
     private String cidade;
 
+    public Cliente save(Cliente cliente) {
+        return cliente;
+    }
 }
 
 

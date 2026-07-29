@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller
-@RequestMapping({"/clientes"})
+@RequestMapping("/clientes")
 public class ClienteController {
 
     private final ClienteRepository repository;
