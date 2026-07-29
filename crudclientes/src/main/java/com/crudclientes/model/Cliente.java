@@ -2,11 +2,16 @@ package com.crudclientes.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.swing.text.html.parser.Entity;
 
 @Entity
-@Table
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Cliente {
 
     @Id
