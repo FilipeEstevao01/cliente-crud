@@ -19,5 +19,9 @@ public class Cliente {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "telefone")
+    private Integer telefone;
 
+    @Column(name = "cidade")
+    private String cidade;
 }
