@@ -31,13 +31,19 @@ public class ClienteController {
     public Iterable<Cliente> listar(){
         return repository.findAll();
     }
+
      // READ (Buscar por id)
     @GetMapping("/{id}")
     public Cliente buscarPorId(@PathVariable Integer id) {
         return (Cliente) repository.findById(id).orElse(null);
     }
 
-
+    //UPDATE
+    @PutMapping("/{id}")
+    public Cliente atualizar(@PathVariable Integer id, @RequestBody Cliente cliente){
+        cliente.setId(id);
+        return repository.save(cliente);
+    }
 
 
 }
