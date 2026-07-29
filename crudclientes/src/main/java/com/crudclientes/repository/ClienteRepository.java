@@ -18,8 +18,10 @@ public class ClienteRepository {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
-
+    private String nome;
+    private String email;
+    private Integer telefone;
+    private String cidade;
 
 }
 
