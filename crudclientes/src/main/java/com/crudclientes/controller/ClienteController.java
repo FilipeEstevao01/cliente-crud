@@ -45,6 +45,12 @@ public class ClienteController {
         return repository.save(cliente);
     }
 
+    //DELETE
+    @DeleteMapping("/{id}")
+    public void excluir(@PathVariable Integer id){
+        repository.deleteById(id);
+    }
+
 
 }
 

@@ -32,6 +32,10 @@ public class ClienteRepository {
     public LazyConstant<Object> findById(Integer id) {
         return null;
     }
+
+    public void deleteById(Integer id) {
+        return;
+    }
 }
 
 
