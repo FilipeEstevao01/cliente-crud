@@ -29,4 +29,13 @@ public class Cliente {
 
     @Column(name = "cidade")
     private String cidade;
+
+    public void orElse() {
+        orElse(hashCode());
+    }
+
+    public Object orElse(Object o) {
+        return o == null ? this : o;
+
+    }
 }

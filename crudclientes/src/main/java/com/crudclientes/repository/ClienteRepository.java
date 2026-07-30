@@ -26,15 +26,18 @@ public class ClienteRepository {
     }
 
     // Aqui foi instanciado o "findAll" para pode usalo no READ.
-    public Iterable<Cliente> findAll() {
+    public String findAll() {
+        return null;
     }
 
-    public LazyConstant<Object> findById(Integer id) {
+    public ClienteRepository(Integer id) {
+    }
+
+    public Cliente findById(Integer id) {
         return null;
     }
 
     public void deleteById(Integer id) {
-        return;
     }
 }
 

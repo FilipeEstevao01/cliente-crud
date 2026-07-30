@@ -28,7 +28,7 @@ public class ClienteController {
 
     //READ (Listar todos)
     @GetMapping
-    public Iterable<Cliente> listar(){
+    public String listar(){
         return repository.findAll();
     }
 
